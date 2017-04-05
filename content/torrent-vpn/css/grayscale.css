@@ -147,7 +147,7 @@ a:focus {
     font-size: 65px;
   }
   .intro .intro-body .intro-text {
-    font-size: 36px;
+    font-size: 33px;
     line-height: 46px;
   }
 }
@@ -331,4 +331,7 @@ body {
 }
 .green {
 	color: #00a651;
+}
+.underline {
+	text-decoration: underline;
 }
