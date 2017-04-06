@@ -37,22 +37,3 @@ function getNextWin() {
     }, 1000);
   });
 }
-
-$(document).ready(function () {
-  appid = getURLParameter('appid');
-
-  getNextWin();
-  getAppContact();
-
-  $('#inputsend').click(function () {
-    $('#savedmsg').text('Saving');
-    var url = getCall('setcontact', {contact: $('#inputemail').val()});
-    $.getJSON(url, function () {
-      getAppContact();
-    });
-  });
-
-  $('#inputemail').keypress(function () {
-    $('#savedmsg').text('Unsaved');
-  });
-})
